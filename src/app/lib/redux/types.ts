@@ -42,13 +42,21 @@ export interface ResumeCustom {
   descriptions: string[];
 }
 
+export interface ResumeAchievements {
+  title: string; // Title of the achievement
+  date: string;  // Date of the achievement
+  descriptions: string[]; // List of descriptive details about the achievement
+}
+
 export interface Resume {
   profile: ResumeProfile;
   workExperiences: ResumeWorkExperience[];
   educations: ResumeEducation[];
+  achievements: ResumeAchievements[]; // Now it's an array of achievements
   projects: ResumeProject[];
   skills: ResumeSkills;
   custom: ResumeCustom;
 }
+
 
 export type ResumeKey = keyof Resume;
