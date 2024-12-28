@@ -38,7 +38,7 @@ export const Hero = () => {
           resume
         </motion.h1>
         <Link
-          href="/resume-import"
+          href="/insert"
           className="btn-primary mt-6 lg:mt-14 inline-block rounded-lg bg-primary px-6 py-3 text-white shadow-lg hover:bg-primary-dark"
         >
           Create Resume →

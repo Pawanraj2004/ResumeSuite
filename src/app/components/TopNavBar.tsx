@@ -17,10 +17,9 @@ export const TopNavBar = () => {
         isHomePage && "bg-dot"
       )}
     >
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center justify-right">
         {/* Logo Section */}
         <Link href="/">
-          <span className="sr-only">ResumeSuite</span>
           <Image
             src={logoSrc}
             alt="ResumeSuite Logo"
@@ -28,16 +27,18 @@ export const TopNavBar = () => {
             priority
           />
         </Link>
-
+        <span className="font-medium  font-extrabold">ResumeSuite</span>
+        </div>
         {/* Navigation Links */}
+        <div className="flex w-full justify-left">
         <nav
           aria-label="Site Navigation"
-          className="flex items-center gap-4 text-sm font-medium"
+          className="flex gap-4 text-sm font-medium"
         >
           {[
             ["/", "Home"],
             ["/about", "About"],
-            ["/resume-builder", "Build"],
+            ["/insert", "Build"],
             ["/parser", "Parser"],
           ].map(([href, text]) => (
             <Link

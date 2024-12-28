@@ -5,28 +5,28 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary outline-theme-purple inline-block rounded-full px-6 py-2 font-semibold shadow-sm;
+    @apply bg-primary outline-first-theme inline-block rounded-full px-6 py-2 font-semibold shadow-sm;
   }
   .text-primary {
-    @apply bg-gradient-to-r from-[color:var(--theme-purple)] to-[color:var(--theme-blue)] bg-clip-text text-transparent !important;
+    @apply bg-gradient-to-r from-[color:var(--first-theme)] to-[color:var(--second-theme)] bg-clip-text text-transparent !important;
   }
   .bg-primary {
-    @apply bg-gradient-to-r from-[color:var(--theme-purple)] to-[color:var(--theme-blue)] text-white;
+    @apply bg-gradient-to-r from-[color:var(--first-theme)] to-[color:var(--second-theme)] text-white;
   }
-  .outline-theme-purple {
-    @apply hover:opacity-80 hover:outline-[color:var(--theme-purple)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--theme-purple)];
+  .outline-first-theme {
+    @apply hover:opacity-80 hover:outline-[color:var(--first-theme)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--first-theme)];
   }
-  .outline-theme-blue {
-    @apply hover:opacity-80 hover:outline-[color:var(--theme-blue)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--theme-blue)];
+  .outline-second-theme {
+    @apply hover:opacity-80 hover:outline-[color:var(--second-theme)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--second-theme)];
   }
-  .within-outline-theme-purple {
-    @apply focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[color:var(--theme-purple)] hover:opacity-80 hover:outline-[color:var(--theme-purple)];
+  .within-outline-first-theme {
+    @apply focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[color:var(--first-theme)] hover:opacity-80 hover:outline-[color:var(--first-theme)];
   }
 }
 
 :root {
-  --theme-purple: #52d9d5;
-  --theme-blue: #9a4feb;
+  --first-theme: #5274d9;
+  --second-theme: #0bafba;
   /* Keep the below variable names in sync with CSS_VARIABLES in globals-css.ts */
   --top-nav-bar-height: 3.5rem;
   --resume-control-bar-height: 3rem;
